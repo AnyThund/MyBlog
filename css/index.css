@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+	height: 100vh;
+	background-image:url(../images/Nier-2B.jpg);
+	background-size:cover;
+	background-repeat:no-repeat;background-position:center;
+}
+.container{
+	width: 60vw;
+	margin: 0 auto;
+	text-align: center;
+}
+.navbar{
+	padding: 1rem 0.75rem;
+}
+.body-area{
+	float: right;
+	width: 40vw;
+}
