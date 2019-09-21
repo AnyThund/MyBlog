@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-	<title>Thunven</title>
-	<link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>休憩小地</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  <div class="container">
-		<header class="navbar">
-			<section>
-				<div>
-					<a href="article.html">文章</a>
-				</div>
-			</section>
-		</header>
-		<div class="body-area">
-			<div class="art-cart">
-				<h2>
-					<a href="#">标题</a>
-				</h2>
-				<p>
-					<a href="#">内容</a>
-				</p>
-			</div>
-		</div>
-		<footer></footer>
-  </div>
-<!-- 	<div class="container">
-		<div class="sidebar">
-			<div class="avatar"></div>
-			<div class="accordion"></div>
-		</div>
-		<div class="header"></div>
-		<div class="content">
+	<div class="site-wrapper">
 
-				文章所需元素:
-				  1.标题
-				  2.副标题
-				  3.作者
-				  4.创作时间(考虑是否需要两个,即创建时间和最后修改时间)
-				  5.标签
-				  6.文章类型
-				  7.阅读量
-				  8.是否原创(转载or原创, 需要加badge)
+		<div class="site-wrapper-inner">
+
+			<div class="cover-container">
+
+				<div class="masthead clearfix">
+					<div class="inner">
+						<h3 class="masthead-brand">Thunven</h3>
+						<nav>
+							<ul class="nav masthead-nav">
+								<li class="active"><a href="#">首页</a></li>
+								<li><a href="article.html">博客</a></li>
+								<li><a href="#">我</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div class="inner cover" id="CoverPanel" v-if="show">
+					<h1 class="cover-heading">Cover your page.</h1>
+					<p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+					<p class="lead">
+						<a href="#" class="btn btn-lg btn-default" @click="hide">Learn more</a>
+					</p>
+				</div>
+
+				<div class="mastfoot">
+					<div class="inner">
+						<p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+					</div>
+				</div>
+
+			</div>
+
 		</div>
-		<div class="footer"></div>
-	</div> -->
-	<!-- <video src="images/Nier.mp4" autoplay="autoplay" loop="loop"></video> -->
+
+	</div>
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/vue.js"></script>
+	<script>
+		var CoverPanel = new Vue({
+			el: '#CoverPanel',
+			data: {
+				show: true,
+			},
+			methods: {
+				hide: function() {
+					this.show = false;
+				}
+			},
+		});
+	</script>
 </body>
 </html>
