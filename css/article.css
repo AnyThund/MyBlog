@@ -9,11 +9,26 @@ body {
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
     background-image:url(../images/Nier-2B.jpg);
     background-size:cover;
-    background-repeat:no-repeat;background-position:center;
+    background-repeat:no-repeat;
+    background-position:center;
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 body {
     padding-top: 70px;
+}
+body .post {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.5);
+    border-radius: 8px;
+	-webkit-transition: box-shadow 0.3s, -webkit-transform 0.3s;
+	-moz-transition: box-shadow 0.3s, -moz-transform 0.3s;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+body .post:hover {
+    box-shadow: 0px 0px 2px #fff;
+    -webkit-transform: translate(-2px,-2px); /* Safari and Chrome */
+    -moz-transform: translate(-2px,-2px); /* IE 9 */
+    transform: translate(-2px,-2px);
 }
 footer {
     padding: 30px 0;
