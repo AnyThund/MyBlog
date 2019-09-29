@@ -107,25 +107,18 @@ body {
 
 
 /*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
-}
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-
-/*
  * Footer
  */
 
 .mastfoot {
+  position: fixed;
+  bottom: 0;
   color: #999; /* IE8 proofing */
   color: rgba(255,255,255,.5);
+  padding: 30px 30px 10px;
+}
+.mastfoot a{
+  color: #ddd;
 }
 
 
@@ -138,10 +131,6 @@ body {
   .masthead {
     position: fixed;
     top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
   }
   /* Start the vertical centering */
   .site-wrapper-inner {
