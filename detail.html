@@ -176,10 +176,18 @@
 			string = string.replace(/\./g,'');
 			return string;
 		}
-		let jH = $('div.blog-post h2, div.blog-post h3, div.blog-post h4, div.blog-post h5, div.blog-post h6');
-		for(var H of jH){
+		function reStringBrac(string){
+			return string.replace(/\(.*\)/g, '');
+		}
+		let jH_2 = $('div.blog-post h2');
+		let jH_3 = $('div.blog-post h3');
+		for(var H of jH_2){
 			$(H).html(`<a name="${reString($(H).text())}">${$(H).text()}</a>`);
-			$('div#collapseTOC').append(`<a class="list-group-item" href="#${$(H).children().attr('name')}">${$(H).text()}</a>`);
+			$('div#collapseTOC').append(`<a class="list-group-item" href="#${$(H).children().attr('name')}">${reStringBrac($(H).text())}</a>`);
+		}
+		for(var H of jH_3){
+			$(H).html(`<a name="${reString($(H).text())}">${$(H).text()}</a>`);
+			$('div#collapseTOC').append(`<a class="list-group-item" href="#${$(H).children().attr('name')}">${reStringBrac($(H).text())}</a>`);
 		}
 	</script>
 </body>
