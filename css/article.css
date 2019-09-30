@@ -1,16 +1,16 @@
 /*
-* Style tweaks
-* --------------------------------------------------
-*/
+ * Style tweaks
+ * --------------------------------------------------
+ */
 
 html,
 body {
-    height: 100%;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
     background-image:url(../images/Nier-2B.jpg);
     background-size:cover;
     background-repeat:no-repeat;
     background-position:center;
+    background-attachment: fixed;
     overflow-x: hidden; /* Prevent scroll on narrow devices */
 }
 body {
@@ -38,6 +38,10 @@ body nav ul.pagination{
 }
 body nav ul.pagination > li > a{
     background-color: rgba(255,255,255,0.5);
+}
+body #sidebar figure figcaption{
+    margin-top:12px;
+    font-size: 16px;
 }
 footer {
     padding: 10px 0;

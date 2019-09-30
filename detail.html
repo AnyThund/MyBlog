@@ -47,7 +47,7 @@
 						<div class="col-sm-9 blog-main">
 		
 							<div class="blog-post well">
-								<h2 class="blog-post-title">Sample blog post</h2>
+								<h1 class="blog-post-title">Sample blog post</h1>
 								<p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
 		
 								<p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
@@ -58,6 +58,7 @@
 								</blockquote>
 								<p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
 								<h2>Heading</h2>
+								<h2>`markdown.mark 0`</h2>
 								<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
 								<h3>Sub-heading</h3>
 								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
@@ -80,7 +81,7 @@
 							</div><!-- /.blog-post -->
 		
 							<div class="blog-post well">
-								<h2 class="blog-post-title">Another blog post</h2>
+								<h1 class="blog-post-title">Another blog post</h1>
 								<p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
 		
 								<p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
@@ -92,7 +93,7 @@
 							</div><!-- /.blog-post -->
 		
 							<div class="blog-post well">
-								<h2 class="blog-post-title">New feature</h2>
+								<h1 class="blog-post-title">New feature</h1>
 								<p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
 		
 								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
@@ -120,16 +121,11 @@
 			</div><!--/.col-xs-12.col-sm-9-->
 
 			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-				<div class="panel panel-default">
-					<div class="panel-heading" role="tab" id="collapseListGroupHeading1">
-						<h4 class="panel-title" role="button" data-toggle="collapse" href="#collapseListGroup1" aria-expanded="true" aria-controls="collapseListGroup1">目录</h4>
-					</div>
-					<div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1" aria-expanded="true">
-						<div class="list-group">
-							<a class="list-group-item" href="#">Bootply</a>
-							<a class="list-group-item" href="#">One itmus ac facilin</a>
-							<a class="list-group-item" href="#">Second eros</a>
-						</div>
+				<div class="panel panel-default toc">
+					<!-- Default panel contents -->
+					<div class="panel-heading" role="button" data-toggle="collapse" href="#collapseTOC" aria-expanded="false" aria-controls="collapseTOC">目录</div>
+					<!-- List group -->
+					<div class="list-group collapse in"  id="collapseTOC">
 					</div>
 				</div>
 				<div class="panel panel-default">
@@ -173,5 +169,18 @@
 	<script src="./js/jquery-3.3.1.min.js"></script>
 	<script src="./js/bootstrap.min.js"></script>
 	<script src="./js/offcanvas.js"></script>
+	<script>
+		function reString(string){
+			string = string.replace(/ /g, '-');
+			string = string.replace(/`/g,'');
+			string = string.replace(/\./g,'');
+			return string;
+		}
+		let jH = $('div.blog-post h2, div.blog-post h3, div.blog-post h4, div.blog-post h5, div.blog-post h6');
+		for(var H of jH){
+			$(H).html(`<a name="${reString($(H).text())}">${$(H).text()}</a>`);
+			$('div#collapseTOC').append(`<a class="list-group-item" href="#${$(H).children().attr('name')}">${$(H).text()}</a>`);
+		}
+	</script>
 </body>
 </html>
