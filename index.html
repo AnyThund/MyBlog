@@ -1,47 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>休憩小地</title>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/index.css">
+	<title>Thunven</title>
+	<link rel="stylesheet" href="./css/layui.css">
+	<link rel="stylesheet" href="./css/custome.css">
 </head>
 <body>
-	<div class="site-wrapper">
+	<div class="layui-container">
+		<div class="layui-raw layui-col-space10">
+			<div class="layui-col-md6">
+				<h1><a href="./index.html">Thunven</a></h1>
+			</div>
+			<div class="layui-col-md6 layui-show-md-block" style="display: none;">
+				<ul class="layui-nav" lay-filter="">
+					<li class="layui-nav-item"><a href="">首页</a></li>
+					<li class="layui-nav-item layui-this"><a href="">文章</a></li>
+					<li class="layui-nav-item"><a href="">归档</a></li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">世界线</a>
+						<dl class="layui-nav-child"> <!-- 二级菜单 -->
+							<dd><a href="">月色真美</a></dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item"><a href="">工具</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 
-		<div class="site-wrapper-inner">
-
-			<div class="cover-container">
-
-				<div class="masthead clearfix">
-					<div class="inner">
-						<h3 class="masthead-brand">Thunven</h3>
-						<nav>
-							<ul class="nav masthead-nav">
-								<li class="active"><a href="#">首页</a></li>
-								<li><a href="article.html">博客</a></li>
-								<li><a href="#">我</a></li>
-							</ul>
-						</nav>
+	<div class="layui-container">
+		<div class="layui-raw layui-col-space10">
+			<div class="layui-col-md9">
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+					<legend>最近文章</legend>
+				</fieldset>
+				<div class="layui-card">
+					<div class="layui-card-img">
+						<img src="./images/pic01.jpg" alt="test">
+					</div>
+					<div class="layui-card-header">
+						<h2><a href="./article.html">卡片面板</a></h2>
+					</div>
+					<div class="layui-card-body">
+						卡片式面板面板通常用于非白色背景色的主体内<br>
+						从而映衬出边框投影
+					</div>
+					<div class="layui-card-footer">
+						<i class="layui-icon layui-icon-user"></i> <a href="">seaven</a>
+						<i class="layui-icon layui-icon-date"></i> <a href="">2020-07-18</a>
+						<i class="layui-icon layui-icon-heart"></i> <a href="">喜欢</a>
 					</div>
 				</div>
-
-				<footer class="mastfoot">
-					<p>Copyright 2018-2019 <a href="https://www.thunven.com">休憩小地&copy;</a>. All Rights Reserved.</p>
-					<p>Cover template from <a href="https://v3.bootcss.com/examples/cover/">Bootstrap</a> modified by <a href="https://www.thunven.com">Thunven</a>.</p>
-					<p>皖ICP备18022910号-1</p>
-				</footer>
-
+				<div class="layui-card">
+					<div class="layui-card-img">
+						<img src="./images/pic01.jpg" alt="test">
+					</div>
+					<div class="layui-card-header">
+						<h2><a href="./article.html">卡片面板</a></h2>
+					</div>
+					<div class="layui-card-body">
+						卡片式面板面板通常用于非白色背景色的主体内<br>
+						从而映衬出边框投影
+					</div>
+					<div class="layui-card-footer">
+						<i class="layui-icon layui-icon-user"></i> <a href="">seaven</a>
+						<i class="layui-icon layui-icon-date"></i> <a href="">2020-07-18</a>
+						<i class="layui-icon layui-icon-heart"></i> <a href="">喜欢</a>
+					</div>
+				</div>
+				<div style="text-align: center;">
+					<div id="pagination"></div>
+				</div>
 			</div>
-
+			<div class="layui-col-md3 layui-show-md-block" style="display: none;">
+				<fieldset class="layui-elem-field thunven-aboutme">
+					<legend>关于我</legend>
+					<div class="layui-field-box">
+						<img class="layui-circle" src="./images/nier01.jpg" alt="" width="75%">
+						<p>“这个世界如此的美丽，我却从来没有注意到。”</p>
+					</div>
+				</fieldset>
+				<fieldset class="layui-elem-field thunven-archive">
+					<legend>最新归档</legend>
+					<div class="layui-field-box">
+						<p><a href="">Text 1</a></p>
+						<p><a href="">Text 1</a></p>
+						<p><a href="">Text 1</a></p>
+					</div>
+				</fieldset>
+			</div>
 		</div>
-
 	</div>
-	<script src="./js/jquery-3.3.1.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
+
+	<div class="layui-fluid">
+		<div class="layui-raw">
+			<div class="layui-col-md12 thunven-footer">
+				COPYRIGHT 2018-2020 <a href="http://www.thunven.com">Thunven</a>. ALL RIGHTS RESERVED.<br>
+				BLOG THEME MADE BY <a href="http://www.github.com/AnyThund">Seaven</a> USING <a href="https://www.layui.com">Layui.</a><br>
+				<a href="http://beian.miit.gov.cn">皖ICP备18022910号-1</a><br>
+				<!-- <a href="http://www.beian.gov.cn">皖公网安备</a><br> -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./layui.all.js"></script>
+	<script>
+		layui.use('util', function(){
+			var util = layui.util;
+			//执行
+			util.fixbar({
+				bgcolor: '#808080',
+				click: function(type){
+					console.log(type);
+					if(type === 'bar1'){
+						alert('点击了bar1')
+					}
+				}
+			});
+		});
+
+		layui.use(['laypage', 'layer'], function(){
+			var laypage = layui.laypage, layer = layui.layer;
+			laypage.render({
+				elem: 'pagination',
+				count: 70,
+				theme: '#808080',
+				prev: 'prev',
+				next: 'next',
+				jump: function(obj){
+					// console.log(obj);
+				}
+			})
+		});
+	</script>
 </body>
 </html>

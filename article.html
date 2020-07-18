@@ -3,178 +3,231 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<title>文章</title>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/article.css">
+	<title>Article</title>
+	<link rel="stylesheet" href="./css/layui.css">
+	<link rel="stylesheet" href="./css/custome.css">
 </head>
 <body>
-  	<nav class="navbar navbar-fixed-top navbar-inverse">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">Thunven</a>
+	<div class="layui-container">
+		<div class="layui-raw layui-col-space10">
+			<div class="layui-col-md6">
+				<h1><a href="./index.html">Thunven</a></h1>
 			</div>
-			<div id="navbar" class="collapse navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">首页</a></li>
-					<li class="active"><a href="#about">博客</a></li>
-					<li><a href="#contact">我</a></li>
+			<div class="layui-col-md6 layui-show-md-block" style="display: none;">
+				<ul class="layui-nav" lay-filter="">
+					<li class="layui-nav-item"><a href="./article.html">首页</a></li>
+					<li class="layui-nav-item layui-this"><a href="">文章</a></li>
+					<li class="layui-nav-item"><a href="">归档</a></li>
+					<li class="layui-nav-item">
+						<a href="javascript:;">世界线</a>
+						<dl class="layui-nav-child"> <!-- 二级菜单 -->
+							<dd><a href="">月色真美</a></dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item"><a href="">工具</a></li>
 				</ul>
-			</div><!-- /.nav-collapse -->
-		</div><!-- /.container -->
-	</nav><!-- /.navbar -->
+			</div>
+		</div>
+	</div>
 
-	<div class="container">
-
-		<div class="row row-offcanvas row-offcanvas-right">
-
-			<div class="col-xs-12 col-sm-9">
-				<p class="pull-right visible-xs">
-					<button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-				</p>
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<article class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</article>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<div class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</div>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<div class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</div>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<div class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</div>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<div class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</div>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-					<div class="col-lg-12">
-						<div class="panel post">
-							<a href="detail.html">
-								<div class="panel-body">
-									<h2 class="cl-effect">Heading</h2>
-									<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-								</div>
-							</a>
-						</div>
-					</div><!--/.col-xs-6.col-lg-4-->
-				</div><!--/row-->
-				<nav class="nav-pagination" aria-label="Page navigation">
-					<ul class="pagination">
-						<li>
-							<a href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-						</li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li>
-							<a href="#" aria-label="Next">
-								<span aria-hidden="true">&raquo;</span>
-							</a>
-						</li>
-					</ul>
-				</nav>
-			</div><!--/.col-xs-12.col-sm-9-->
-
-			<div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h3 class="panel-title">Panel title</h3>
+	<div class="layui-container">
+		<div class="layui-raw layui-col-space10">
+			<div class="layui-col-md9">
+				<div class="layui-card" style="margin-top: 43px;">
+					<div class="layui-card-img">
+						<img src="./images/pic01.jpg" alt="test">
 					</div>
-					<div class="panel-body">
-						<figure>
-							<a href="#"><img src="./images/timg01.jpg" alt="..." class="img-circle img-thumbnail img-responsive center-block" width="140" height="140"></a>
-							<figcaption class="text-center"><a href="#">Seaven</a></figcaption>
-						</figure>
+					<div class="layui-card-header">
+						<h2>文章标题——English Title</h2>
+					</div>
+					<div class="layui-card-body">
+						宅家时，盼着上班；复工了，又变得焦虑。疫情过后，职场上的种种不确定因素和压力，让一些人患上“职场焦虑症”。
+
+　　在心理专家看来，追溯职场焦虑的根源，一方面是缺少学习内驱力——忍不了现在，看不清未来。另一方面，是没有平衡好有限的时间和精力，以为抓住所有机会，就能拥有一切。
+
+　　本期《解忧电台》，教你正确化解职场焦虑，一起抖擞精神，充满干劲儿。
+
+　　前段时间，夏夏听到要复工的消息，心里凉了半截。好性子的她，在单位第一次跟领导撒了脾气。几天后，她没来由地心慌、气短，跑了好几家医院，但任何问题也没查出来。
+
+　　这些症状，实际上是“植物神经功能紊乱”，是焦虑的表现。但最根本的，还是我们面对未知时的力不从心，以及外界变化带来的恐惧感。
+
+　　当你缺少学习的内驱力，就会越来越焦虑
+
+　　惰性会让我们丧失学习内驱力，忍不了现在，看不清未来。
+
+　　在微博上，有张图很写实：一个人正襟危坐在电脑前，呆呆的，头顶冒出一小行字：疫情再不过去，都快忘记自己原来是干啥的了。
+
+　　人们对于外部世界的认知，分为舒适区、学习区、恐慌区，有人之所以感到害怕，是因为直接从舒适区跳到了恐慌区。
+
+
+
+　　比如，疫情过后，客户少了，工作量却多了；厂家断货，只能对着订单干着急……我们在处理超出个人能力范围的事情时，就会无所适从。工作还不错的，担心被裁员减薪；对工作不满意的，又不敢跳槽……
+
+
+
+　　大家都很关注李子柒，一个女孩，能把种菜、做饭这种烦燥不堪的事搞得那么美。她满园的瓜果梨桃，春有百花，秋有百果，可你也要知道，“春种一粒粟，秋收万颗子”，不努力学习打拼，怎么可能取得丰硕的果实。
+
+　　有一位叫甜甜的姑娘，3年前还是一家工厂的HR。去年，她考取了全国二级心理咨询师证书，开了微信号，做自媒体，收入节节攀升后，也不为“死工资”感到焦虑了。
+
+　　记得《时间的格局》里，有这么一句话：唯有梦想，才配得上你焦虑；唯有行动，才能解除你的焦虑。拥抱不确定性，才能给自己更多的自由。
+
+　　不是抓住所有机会，就能拥有一切
+
+　　或许你有这样的体会：原本工作劲头很足，但面对堆积如山的工作，即便自己那点干劲儿都消耗完了，还是不能完成。最近，很多人抱怨，复工后，比平时一个月的工作量还大。
+
+
+
+　　一位律师事务所的合伙人每天都有列清单的好习惯——他会筛选出20%的重要事情和80%的一般事情，并确定先后顺序，预设完成时间。在归类时，把最有价值、最关键的事情放在A类，把最多的精力聚焦于此，其次B类，再是C类。
+
+　　我们总会不由自主地告诉自己，必须尽快完成工作，这种想法让我们感觉到被逼迫一般，甚至在不知不觉中，变成工作的奴隶。
+
+
+
+　　一个网友的留言，引起很多人共鸣：他说，曾向一位成功人士请教，对方说，我永远只给优先度最高的任务分配时间。但绝大多数人分配时间时，总是选择最容易的事。所以，成功的总是少数人。
+
+　　我们的时间和精力都是有限资源。不是一定完成清单上的所有事项，而是完成清单上全部重要的事项；不是处理完所有等待约见的人，而是把真正重要人物的问题处理完。
+
+　　有时，切断智能手机对自己的干扰，专注是高效的前提；按照主要矛盾和次要矛盾，将时间花在重要的工作上。
+
+　　要知道，不是抓住所有机会，就能拥有一切。
+
+　　焦虑一时打不败你，要拥有“对付”它的底气
+
+　　如果从22岁工作算起，人生至少有一半的时间都用在了工作上，逃避不能解决任何问题。
+
+　　适当的焦虑，会使人保持一个高唤起的觉醒状态，让人干劲十足。比如有的人越是临近最后期限，就越是思如泉涌，灵感迸发。但长期且巨大的焦虑，会损害我们的神经系统，让人失去动力和活力。
+
+　　这世上没有铁打的身体，该休息时就休息，想哭泣时就哭泣。
+
+　　去海滩、深山、沙漠，或是大城市的水族馆、游乐园玩一玩吧。吃点自己平时喜欢的东西，美食的治愈能力自古以来都是强大的。看看那些CEO和高管们，即便再忙，也会抽空运动，释放多巴胺。
+
+
+
+　　曾听闻一个词语，叫“因定生慧”。很多成功人士早晨的第一件事是——冥想，简单地盘腿，以一个舒适的姿势坐在床上，专注于呼吸，摒除杂念。时不时切断他人的干扰、切断与工作的联系，甚至切断手机电源，好好喘口气。
+
+　　我们不能避免焦虑的存在，但可以去接纳它，与它共处。永远记得，先处理心情，再处理工作。唯有勇敢面对，才能够找到合适的解决办法。
+
+　　当你下一次，在工作中感到焦虑不安的时候，切记不要做甩手掌柜，甚至拍拍屁股走人。焦虑一时打不败你，你要做的，是让变得更强大，从而拥有足以“对付”焦虑的底气。
+
+						<pre class="layui-code">//在里面存放任意的代码
+Lay.fn.event = function(modName, events, params){
+	var that = this, result = null, filter = events.match(/\(.*\)$/)||[];
+	var set = (events = modName + '.'+ events).replace(filter, ''); 
+};</pre>
+
 					</div>
 				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-					  	<h3 class="panel-title">归档</h3>
+				<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+					<legend>评论</legend>
+				</fieldset>
+				<div class="layui-card thunven-comment">
+					<div class="layui-card-header">
+						<img class="layui-circle" src="./images/nier01.jpg" alt="" height="90%">
+						<p class="layui-inline">王某某<br><small>2020-7-18</small></p>
 					</div>
-					<div class="list-group">
-						<a class="list-group-item" href="#">
-							<span class="badge">14</span>Link
-						</a>
-						<a class="list-group-item" href="#">Link</a>
-						<a class="list-group-item" href="#">Link</a>
-						<a class="list-group-item" href="#">Link</a>
-					</div>
-				</div>
-				<div class="panel panel-default">
-					<div class="panel-heading">
-					  	<h3 class="panel-title">标签</h3>
-					</div>
-					<div class="panel-body">
-						<a href="#"><span class="label label-default">Python</span></a>
-						<a href="#"><span class="label label-primary">Linux</span></a>
-						<a href="#"><span class="label label-success">Django</span></a>
-						<a href="#"><span class="label label-info">Info</span></a>
-						<a href="#"><span class="label label-warning">Warning</span></a>
-						<a href="#"><span class="label label-danger">Danger</span></a>
+					<div class="layui-card-body">
+						卡片式面板面板通常用于非白色背景色的主体内<br>
+						从而映衬出边框投影
 					</div>
 				</div>
-			</div><!--/.sidebar-offcanvas-->
-		</div><!--/row-->
+				<div class="layui-card">
+					<div class="layui-card-header">发表评论</div>
+					<div class="layui-card-body">
+						<form class="layui-form" action="">
+							<div class="layui-form-item layui-form-text">
+								<label class="layui-form-label">
+									<i class="layui-icon layui-icon-align-right"></i>
+								</label>
+								<div class="layui-input-block">
+									<textarea name="comment" placeholder="请输入内容" class="layui-textarea"></textarea>
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">
+									<i class="layui-icon layui-icon-username"></i>
+								</label>
+								<div class="layui-input-block">
+									<input type="text" name="name" required lay-verify="required" placeholder="昵称(必填)" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">
+									<i class="layui-icon layui-icon-email"></i>
+								</label>
+								<div class="layui-input-block">
+									<input type="text" name="email" required lay-verify="required" placeholder="邮箱(必填)" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<label class="layui-form-label">
+									<i class="layui-icon layui-icon-link"></i>
+								</label>
+								<div class="layui-input-block">
+									<input type="text" name="website" placeholder="博客地址" autocomplete="off" class="layui-input">
+								</div>
+							</div>
+							<div class="layui-form-item">
+								<div class="layui-input-block">
+									<button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+									<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-md3 layui-show-md-block" style="display: none;">
+				<fieldset class="layui-elem-field thunven-aboutme">
+					<legend>关于我</legend>
+					<div class="layui-field-box">
+						<img class="layui-circle" src="./images/nier01.jpg" alt="" width="75%">
+						<p>“这个世界如此的美丽，我却从来没有注意到。”</p>
+					</div>
+				</fieldset>
+				<fieldset class="layui-elem-field thunven-archive">
+					<legend>最新归档</legend>
+					<div class="layui-field-box">
+						<p><a href="">Text 1</a></p>
+						<p><a href="">Text 1</a></p>
+						<p><a href="">Text 1</a></p>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
 
-		<hr>
+	<div class="layui-fluid">
+		<div class="layui-raw">
+			<div class="layui-col-md12 thunven-footer">
+				COPYRIGHT 2018-2020 <a href="http://www.thunven.com">Thunven</a>. ALL RIGHTS RESERVED.<br>
+				BLOG THEME MADE BY <a href="http://www.github.com/AnyThund">Seaven</a> USING <a href="https://www.layui.com">Layui.</a><br>
+				<a href="http://beian.miit.gov.cn">皖ICP备18022910号-1</a><br>
+				<!-- <a href="http://www.beian.gov.cn">皖公网安备</a><br> -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./layui.all.js"></script>
+	<script>
+		layui.use('util', function(){
+			var util = layui.util;
+			//执行
+			util.fixbar({
+				bgcolor: '#808080',
+				click: function(type){
+					console.log(type);
+					if(type === 'bar1'){
+						alert('点击了bar1')
+					}
+				}
+			});
+		});
 
-		<footer class="mastfoot">
-			<p>Copyright 2018-2019 <a href="https://www.thunven.com">休憩小地&copy;</a>. All Rights Reserved.</p>
-			<p>Cover template from <a href="https://v3.bootcss.com/examples/cover/">Bootstrap</a> modified by <a href="https://www.thunven.com">Thunven</a>.</p>
-			<p>皖ICP备18022910号-1</p>
-		</footer>
-
-	</div><!--/.container-->
-	<script src="./js/jquery-3.3.1.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/offcanvas.js"></script>
+		layui.use('code', function(){ //加载code模块
+			layui.code({
+				title: 'JavaScript',
+				about: false
+			}); //引用code方法
+		});
+	</script>
 </body>
 </html>

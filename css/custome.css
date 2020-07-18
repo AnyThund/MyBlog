@@ -1,0 +1,137 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    background-image: url(../images/pic01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    line-height: 60px;
+    font-weight: 600;
+}
+
+.layui-nav {
+    float: right;
+    background-color: transparent;
+}
+
+.layui-nav .layui-nav-item a:hover,
+.layui-nav .layui-this a {
+    color: #ddd;
+}
+
+.layui-nav .layui-nav-item a {
+    /* color: rgba(19, 182, 41, 0.7); */
+    color: #000;
+}
+
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+    background-color: #ccc;
+}
+
+.layui-card-img {
+    position: relative;
+    /* padding: 10px 15px; */
+    height: 20em;
+    overflow: hidden;
+}
+
+.layui-card-img img {
+    width: 100%;
+}
+
+.layui-card-header h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.layui-card-footer {
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    border-top: 1px solid #f6f6f6;
+    color: #555;
+    border-radius: 0 0 2px 2px;
+    font-size: 14px;
+}
+
+.layui-card-footer .layui-icon {
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 15px;
+}
+
+.thunven-aboutme {
+    margin-top: 30px;
+}
+
+.thunven-aboutme .layui-field-box {
+    text-align: center;
+}
+
+.thunven-aboutme .layui-field-box p {
+    margin-top: 24px;
+    line-height: 24px;
+    color: #549;
+}
+
+.thunven-archive .layui-field-box {
+    padding-bottom: 5px;
+}
+
+.thunven-archive .layui-field-box p {
+    line-height: 36px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.thunven-archive .layui-field-box p a {
+    color: #000;
+    padding-left: 0.5em;
+    transition: padding-left 0.5s;
+}
+
+.thunven-archive .layui-field-box p:hover a {
+    padding-left: 1.5em;
+}
+
+.thunven-archive .layui-field-box p:last-child {
+    border-bottom: none;
+}
+
+.thunven-comment .layui-card-header {
+    height: 50px;
+    padding: 5px 15px;
+}
+
+.thunven-comment .layui-card-header p {
+    line-height: 20px;
+    padding-top: 0.5em;
+    padding-left: 5px;
+}
+
+.layui-form-label {
+    width: 20px;
+}
+
+.layui-input-block {
+    margin-left: 50px;
+}
+
+.layui-fluid {
+    padding: 0;
+}
+
+.thunven-footer {
+    margin-top: 0.5em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
